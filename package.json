@@ -1,0 +1,52 @@
+{
+    "type": "module",
+    "name": "userscript-youtube-music-sleep-timer",
+    "productName": "YouTube Music Sleep Timer",
+    "description": "Automatically pause YouTube music",
+    "author": "Stephen",
+    "license": "AGPL-3.0-only",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Trinovantes/userscript-youtube-music-sleep-timer"
+    },
+    "private": true,
+    "scripts": {
+        "dev": "NODE_ENV=development webpack serve",
+        "build": "webpack",
+        "lint": "vue-tsc && eslint"
+    },
+    "devDependencies": {
+        "@eslint/compat": "^2.0.0",
+        "@eslint/js": "^9.39.1",
+        "@stylistic/eslint-plugin": "^5.6.0",
+        "@types/greasemonkey": "^4.0.7",
+        "@types/lodash.debounce": "^4.0.9",
+        "@types/node": "^24.10.1",
+        "@types/webpack-env": "^1.18.8",
+        "@vue/compiler-sfc": "^3.5.24",
+        "css-loader": "^7.1.2",
+        "esbuild-loader": "^4.4.0",
+        "eslint": "^9.39.1",
+        "eslint-plugin-n": "^17.23.1",
+        "eslint-plugin-vue": "^10.5.1",
+        "globals": "^16.5.0",
+        "html-webpack-plugin": "^5.6.5",
+        "lodash.debounce": "^4.0.8",
+        "pinia": "^3.0.4",
+        "sass": "^1.94.1",
+        "sass-loader": "^16.0.6",
+        "style-loader": "^4.0.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.47.0",
+        "vue": "^3.5.24",
+        "vue-eslint-parser": "^10.2.0",
+        "vue-loader": "^17.4.2",
+        "vue-tsc": "^3.1.4",
+        "webpack": "^5.103.0",
+        "webpack-cli": "^6.0.1",
+        "webpack-dev-server": "^5.2.2",
+        "webpack-userscript": "^3.2.3"
+    }
+}
