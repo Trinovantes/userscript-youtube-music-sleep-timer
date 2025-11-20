@@ -5,7 +5,7 @@
     "description": "Automatically pause YouTube music",
     "author": "Stephen",
     "license": "AGPL-3.0-only",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/Trinovantes/userscript-youtube-music-sleep-timer"
