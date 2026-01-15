@@ -11,13 +11,6 @@ const clickPauseBtn = async () => {
 
     const btn = await findDelayedElement('yt-icon-button#play-pause-button button')
     console.info(btn)
-
-    if (btn.getAttribute('aria-label') !== 'Pause') {
-        console.warn('Not pause button (nothing playing?)')
-        console.groupEnd()
-        return
-    }
-
     btn.click()
 
     console.groupEnd()
