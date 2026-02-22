@@ -5,6 +5,9 @@ import SleepTimerCancelBtn from './SleepTimerCancelBtn.vue'
 import SleepTimerCountdown from './SleepTimerCountdown.vue'
 import SleepTimerTimeSelector from './SleepTimerTimeSelector.vue'
 import { findDelayedElement } from '../utils/findDelayedElement.ts'
+import { useNotificationWatcher } from './useNotificationWatcher.ts'
+
+const { hasActiveToast } = useNotificationWatcher()
 
 const clickPauseBtn = async () => {
     console.groupCollapsed(__NAME__, 'clickPauseBtn')
@@ -30,6 +33,9 @@ watch(() => timerStore.currentState, async (newState) => {
 <template>
     <div
         class="sleep-timer flex-hgap"
+        :style="{
+            bottom: hasActiveToast ? '160px' : '100px'
+        }"
     >
         <div class="flex-hgap">
             <SleepTimerCountdown />
