@@ -17,7 +17,7 @@ const options = [
     },
     {
         label: '30 min',
-        value: 32,
+        value: 30,
     },
     {
         label: '45 min',
